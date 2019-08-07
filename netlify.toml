@@ -1,7 +1,7 @@
 [build]
   base    = "create-react-app-master"
-  publish = "build"
-  command = "yarn build"
+  publish = "./build"
+  command = "npm run build"
   
 
 # A redirect rule with all the supported properties
