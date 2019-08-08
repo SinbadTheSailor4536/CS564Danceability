@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import SearchBar from './components/SearchBar';
 
 function App() {
   return (
@@ -8,7 +9,8 @@ function App() {
       <header className="App-header">
         <h1>Danceability</h1>
         <p>An app for Dancing Musicality</p>
-        <p> Test </p>
+        <SearchBar />
+        <button />
       </header>
     </div>
   );
