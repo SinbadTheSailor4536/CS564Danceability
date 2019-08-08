@@ -3,22 +3,20 @@ label {
   background-color: #282c34;
 }
 
-div {
-  float: left;
-}
-
 input.field {
   text-align: center;
   font-style: italic;
   color: #14a76c;
   background-color: #ffffff;
   width: 10%;
+  display: inline-block;
 }
 
 input.button {
   font-weight: bold;
   color: #14a76c;
   background-color: #282c34;
+  display: inline-block;
 }
 
 form {
@@ -38,4 +36,5 @@ p {
   font-style: italic;
   margin-left: 10px;
   margin-right: 10px;
+  display: inline-block;
 }
