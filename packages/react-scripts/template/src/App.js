@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import SearchBar from './components/SongSearchBar';
+import SongSearchBar from './components/SongSearchBar';
 
 function App() {
   return (
