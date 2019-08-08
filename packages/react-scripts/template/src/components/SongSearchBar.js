@@ -49,7 +49,7 @@ class SongSearchBar extends React.Component {
             onChange={this.handleSong}
           />
         </label>
-        <p style="margin-left:10px, margin-right:10px;"> and </p>
+        <p> and </p>
         <input
           className="field"
           type="text"

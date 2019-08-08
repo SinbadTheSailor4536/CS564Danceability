@@ -27,3 +27,8 @@ text {
   font-weight: bold;
   font-style: italic;
 }
+
+p {
+  margin-left: 10px;
+  margin-right: 10px;
+}
