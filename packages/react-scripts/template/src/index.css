@@ -35,12 +35,12 @@ div.background {
 
 div.left {
   background-color: #282c34;
-  margin-left: 10%;
+  padding: 10%;
   text-align: left;
 }
 
 div.center {
   background-color: #282c34;
-  margin-left: 10%;
+  padding: 10%;
   text-align: center;
 }
