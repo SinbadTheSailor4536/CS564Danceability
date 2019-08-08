@@ -9,7 +9,7 @@ class SongSearchBar extends React.Component {
       artist: 'Search for a Song by Artist ...',
     };
 
-    this.handleClick = this.handleClick.bind(this);
+    this.handleSongClick = this.handleSongClick.bind(this);
     this.handleSong = this.handleSong.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
   }
