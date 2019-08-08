@@ -9,13 +9,21 @@ class SongSearchBar extends React.Component {
       artist: 'Search for a Song by Artist ...',
     };
 
+    this.handleArtistClick = this.handleArtistClick.bind(this);
     this.handleSongClick = this.handleSongClick.bind(this);
     this.handleSong = this.handleSong.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
+  handleArtistClick(event) {
+    this.setState({ artist: '' });
+  }
   handleSongClick(event) {
     this.setState({ song: '' });
+  }
+
+  handleArtist(event) {
+    this.setState({ artist: event.target.value });
   }
 
   handleSong(event) {
@@ -23,7 +31,9 @@ class SongSearchBar extends React.Component {
   }
 
   handleSubmit(event) {
-    alert('A search was submitted: ' + this.state.song);
+    alert(
+      'A search was submitted: ' + this.state.song + ' by ' + this.state.artist
+    );
     event.preventDefault();
   }
 
@@ -39,6 +49,14 @@ class SongSearchBar extends React.Component {
             onChange={this.handleSong}
           />
         </label>
+        <p style="margin-left:10px, margin-right:10px;"> and </p>
+        <input
+          className="field"
+          type="text"
+          value={this.state.artist}
+          onClick={this.handleArtistClick}
+          onChange={this.handleArtist}
+        />
         <input className="button" type="submit" value="Submit" />
       </form>
     );

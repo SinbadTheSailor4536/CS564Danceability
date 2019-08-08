@@ -29,9 +29,11 @@ h2 {
 }
 
 div.left {
+  background-color: #282c34;
   text-align: left;
 }
 
 div.center {
+  background-color: #282c34;
   text-align: center;
 }
