@@ -3,11 +3,16 @@ label {
   background-color: #282c34;
 }
 
+div {
+  float: left;
+}
+
 input.field {
   text-align: center;
   font-style: italic;
   color: #14a76c;
   background-color: #ffffff;
+  width: 10%;
 }
 
 input.button {
@@ -29,6 +34,8 @@ text {
 }
 
 p {
+  font-weight: bold;
+  font-style: italic;
   margin-left: 10px;
   margin-right: 10px;
 }

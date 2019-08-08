@@ -40,24 +40,26 @@ class SongSearchBar extends React.Component {
   render() {
     return (
       <form onSubmit={this.handleSubmit}>
-        <label>
+        <div>
           <input
+            name="song"
             className="field"
             type="text"
             value={this.state.song}
             onClick={this.handleSongClick}
             onChange={this.handleSong}
           />
-        </label>
-        <p> and </p>
-        <input
-          className="field"
-          type="text"
-          value={this.state.artist}
-          onClick={this.handleArtistClick}
-          onChange={this.handleArtist}
-        />
-        <input className="button" type="submit" value="Submit" />
+          <p> &amp; </p>
+          <input
+            name="artist"
+            className="field"
+            type="text"
+            value={this.state.artist}
+            onClick={this.handleArtistClick}
+            onChange={this.handleArtist}
+          />
+          <input className="button" type="submit" value="Submit" />
+        </div>
       </form>
     );
   }
