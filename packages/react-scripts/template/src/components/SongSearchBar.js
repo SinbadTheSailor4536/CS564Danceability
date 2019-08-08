@@ -1,13 +1,21 @@
 import React from 'react';
-import '../styleSheets/SearchBar.css';
+import '../styleSheets/SongSearchBar.css';
 
-class SearchBar extends React.Component {
+class SongSearchBar extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { song: 'Search for a Song by Title ...' };
+    this.state = {
+      song: 'Search for a Song by Title ...',
+      artist: 'Search for a Song by Artist ...',
+    };
 
+    this.handleClick = this.handleClick.bind(this);
     this.handleSong = this.handleSong.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
+  }
+
+  handleSongClick(event) {
+    this.setState({ song: '' });
   }
 
   handleSong(event) {
@@ -27,6 +35,7 @@ class SearchBar extends React.Component {
             className="field"
             type="text"
             value={this.state.song}
+            onClick={this.handleSongClick}
             onChange={this.handleSong}
           />
         </label>
@@ -36,4 +45,4 @@ class SearchBar extends React.Component {
   }
 }
 
-export default SearchBar;
+export default SongSearchBar;
