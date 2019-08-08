@@ -1,6 +1,6 @@
 import React from 'react';
 
-export class SearchBar extends React.Component {
+class SearchBar extends React.Component {
   constructor(props) {
     super(props);
     this.state = { value: '' };
@@ -35,4 +35,6 @@ export class SearchBar extends React.Component {
   }
 }
 
-ReactDOM.render(<SearchBar />, document.getElementById('root'));
+export default SearchBar;
+
+//ReactDOM.render(<SearchBar />, document.getElementById('root'));
