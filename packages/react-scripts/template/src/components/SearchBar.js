@@ -11,7 +11,7 @@ class SearchBar extends React.Component {
   }
 
   handleSong(event) {
-    this.setState({ song: event.target.song });
+    this.setState({ song: event.target.value });
   }
 
   handleSubmit(event) {
@@ -26,7 +26,7 @@ class SearchBar extends React.Component {
           <input
             className="field"
             type="text"
-            song={this.state.song}
+            value={this.state.song}
             onChange={this.handleSong}
           />
         </label>

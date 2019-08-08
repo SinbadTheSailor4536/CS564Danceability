@@ -5,11 +5,11 @@ import SearchBar from './components/SearchBar';
 
 function App() {
   return (
-    <div className="center">
+    <div className="app">
       <header className="App-header">
         <h1>Danceability</h1>
         <p>An app for Dancing Musicality</p>
-        <div classname="left">
+        <div>
           <h2>Quick Search</h2>
           <SearchBar />
         </div>
