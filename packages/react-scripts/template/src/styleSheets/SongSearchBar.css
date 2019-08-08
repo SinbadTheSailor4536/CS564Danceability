@@ -8,8 +8,10 @@ input.field {
   font-style: italic;
   color: #14a76c;
   background-color: #ffffff;
-  width: 40%;
+  width: 30%;
   display: inline-block;
+  margin-right: 5px;
+  margin-left: 5px;
 }
 
 input.button {
@@ -17,6 +19,8 @@ input.button {
   color: #14a76c;
   background-color: #282c34;
   display: inline-block;
+  margin-right: 5px;
+  margin-left: 5px;
 }
 
 form {
@@ -34,7 +38,7 @@ text {
 p {
   font-weight: bold;
   font-style: italic;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
   display: inline-block;
 }
