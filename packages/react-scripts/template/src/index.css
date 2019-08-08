@@ -30,10 +30,12 @@ h2 {
 
 div.left {
   background-color: #282c34;
+  margin-left: 10%;
   text-align: left;
 }
 
 div.center {
   background-color: #282c34;
+  margin-left: 10%;
   text-align: center;
 }
