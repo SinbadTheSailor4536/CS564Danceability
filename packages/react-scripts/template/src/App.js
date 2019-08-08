@@ -5,7 +5,7 @@ import SongSearchBar from './components/SongSearchBar';
 
 function App() {
   return (
-    <div className="backgroud">
+    <div className="background">
       <div className="center">
         <header className="App-header">
           <h1>Danceability</h1>
