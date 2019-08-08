@@ -20,3 +20,10 @@ form {
   color: #14a76c;
   background-color: #282c34;
 }
+
+text {
+  color: #14a76c;
+  background-color: #282c34;
+  font-weight: bold;
+  font-style: italic;
+}

@@ -9,8 +9,10 @@ function App() {
       <header className="App-header">
         <h1>Danceability</h1>
         <p>An app for Dancing Musicality</p>
-        <h2>Quick Search</h2>
-        <SearchBar />
+        <div>
+          <h2>Quick Search</h2>
+          <SearchBar />
+        </div>
       </header>
     </div>
   );

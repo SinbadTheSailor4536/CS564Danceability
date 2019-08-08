@@ -4,18 +4,18 @@ import '../styleSheets/SearchBar.css';
 class SearchBar extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { value: 'Search for a Song by Title ...' };
+    this.state = { song: 'Search for a Song by Title ...' };
 
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
-  handleChange(event) {
-    this.setState({ value: event.target.value });
+  handleSong(event) {
+    this.setState({ song: event.target.song });
   }
 
   handleSubmit(event) {
-    alert('A search was submitted: ' + this.state.value);
+    alert('A search was submitted: ' + this.state.song);
     event.preventDefault();
   }
 
@@ -23,13 +23,13 @@ class SearchBar extends React.Component {
     return (
       <form onSubmit={this.handleSubmit}>
         <label>
-          Dance Name:
           <input
             className="field"
             type="text"
-            value={this.state.value}
-            onChange={this.handleChange}
+            song={this.state.song}
+            onChange={this.handleSong}
           />
+          <text> & </text>
         </label>
         <input className="button" type="submit" value="Submit" />
       </form>
@@ -38,5 +38,3 @@ class SearchBar extends React.Component {
 }
 
 export default SearchBar;
-
-//ReactDOM.render(<SearchBar />, document.getElementById('root'));
