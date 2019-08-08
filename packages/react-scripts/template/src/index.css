@@ -28,6 +28,11 @@ h2 {
   text-decoration: underline;
 }
 
+div.background {
+  margin-left: 0%;
+  background-color: #282c34;
+}
+
 div.left {
   background-color: #282c34;
   margin-left: 10%;
