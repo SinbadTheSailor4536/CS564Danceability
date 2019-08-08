@@ -29,7 +29,6 @@ class SearchBar extends React.Component {
             song={this.state.song}
             onChange={this.handleSong}
           />
-          <text> & </text>
         </label>
         <input className="button" type="submit" value="Submit" />
       </form>
