@@ -25,13 +25,13 @@ class SearchBar extends React.Component {
         <label>
           Dance Name:
           <input
-            className="input-field"
+            className="field"
             type="text"
             value={this.state.value}
             onChange={this.handleChange}
           />
         </label>
-        <input className="submit-button" type="submit" value="Submit" />
+        <input className="button" type="submit" value="Submit" />
       </form>
     );
   }
