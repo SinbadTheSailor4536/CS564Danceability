@@ -1,11 +1,19 @@
 label {
   color: #14a76c;
+  background-color: #282c34;
 }
 
-input {
+input-field {
   text-align: center;
   font-style: italic;
   color: #14a76c;
+  background-color: #ffffff;
+}
+
+submit-button {
+  font-weight: bold;
+  color: #14a76c;
+  background-color: #282c34;
 }
 
 form {
