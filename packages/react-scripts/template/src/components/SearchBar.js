@@ -6,7 +6,7 @@ class SearchBar extends React.Component {
     super(props);
     this.state = { song: 'Search for a Song by Title ...' };
 
-    this.handleChange = this.handleChange.bind(this);
+    this.handleSong = this.handleSong.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
