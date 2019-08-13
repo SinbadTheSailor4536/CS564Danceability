@@ -1,5 +1,6 @@
 import React from 'react';
-import '../styleSheets/SongSearchBar.css';
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import SongQuickSearch from '../SongQuickSearch';
 
 class SongSearchBar extends React.Component {
   constructor(props) {
@@ -50,7 +51,12 @@ class SongSearchBar extends React.Component {
             onClick={this.handleClick}
             onChange={this.handleChange}
           />
-          <input className="button" type="submit" value="Submit" />
+          <Router>
+            
+            <Link to="/SongQuickSearch">
+              <button>Submit</button>
+            </Link>
+          </Router>
         </div>
       </form>
     );

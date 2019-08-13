@@ -1,20 +1,35 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import SongSearchBar from './components/SongSearchBar';
-import DurationFields from './components/DurationFields';
-import ReleaseYearRange from './components/ReleaseYearRange';
 import DanceSearchMenu from './components/DanceSearchMenu';
-import OrderByPopularity from './components/OrderByPopularity';
 import AdvancedSearch from './components/AdvancedSearch';
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import SongQuickSearch from './SongQuickSearch';
+import AdvancedSearchPage from './AdvancedSearchPage';
+import DanceQuickSearch from './DanceQuickSearch';
+
 
 function App() {
   return (
-    <div className="background">
+    <Router>
+      <Switch>
+        <Route path='/' exact component={Home}/>
+        <Route path="/SongQuickSearch" component={SongQuickSearch} />
+        <Route path="/DanceQuickSearch" component={DanceQuickSearch} />
+        <Route path="/AdvancedSearch" component={AdvancedSearchPage} />
+       
+      </Switch>
+    </Router>
+  );
+}
+
+const Home = () => (
+
+  <div className="background">
       <div className="center">
         <header className="App-header">
           <h1>Danceability</h1>
-          <p>An app for Dancing Musicality!</p>
+          <p>A web-app for Dancing Musicality!</p>
         </header>
         <div className="left">
           <h2>Quick Search</h2>
@@ -22,11 +37,10 @@ function App() {
           <DanceSearchMenu />
 
           <AdvancedSearch />
-          
+
         </div>
       </div>
     </div>
-  );
-}
-
+    
+);
 export default App;
