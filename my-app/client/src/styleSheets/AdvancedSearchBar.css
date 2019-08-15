@@ -1,0 +1,45 @@
+label {
+    color: #14a76c;
+    background-color: #282c34;
+  }
+  
+  input.field {
+    text-align: center;
+    font-style: italic;
+    color: #14a76c;
+    background-color: #ffffff;
+    width: 30%;
+    display: inline-block;
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+  
+  input.button {
+    font-weight: bold;
+    color: #14a76c;
+    background-color: #282c34;
+    border-color: #14a76c;
+    display: inline-block;
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+  
+  form {
+    color: #14a76c;
+    background-color: #282c34;
+  }
+  
+  text {
+    color: #14a76c;
+    background-color: #282c34;
+    font-weight: bold;
+    font-style: italic;
+  }
+  
+  p {
+    font-weight: bold;
+    font-style: italic;
+    margin-left: 5px;
+    margin-right: 5px;
+    display: block;
+  }
